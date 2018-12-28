@@ -1,4 +1,4 @@
-s = str(raw_input())
+s = str(input())
 
 s = s.split(" ")
 
