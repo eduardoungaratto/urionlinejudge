@@ -16,7 +16,7 @@ class URI {
         double vl2 = double.Parse(l2[2], CultureInfo.InvariantCulture); 
         double vlt = ((qtd1 * vl1) + (qtd2 * vl2)); 
  
-        Console.WriteLine(" VALOR A PAGAR: R$ {0}", vlt.ToString("F2")); 
+        Console.WriteLine("VALOR A PAGAR: R$ {0}", vlt.ToString("F2")); 
 
     }
 
