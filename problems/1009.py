@@ -1,6 +1,8 @@
 vendedor = str(input())
-salario = float(input())
-vendas = float(input())
+salario = float(str(input()).replace(',','.'))
+vendas = float(str(input()).replace(',','.'))
 
 total = salario + (vendas * 0.15)
-print("{:.2f}".format(total))
+total = "{:.2f}".format(total)
+total = str(total).replace(',','.')
+print("TOTAL = R$ " + total)
