@@ -4,9 +4,8 @@ using System.Globalization;
 class URI {
 
     static void Main(string[] args) { 
-		String sX = Console.ReadLine();
+		string sX = Console.ReadLine();
 		double dX = double.Parse(sX, CultureInfo.InvariantCulture);
-
 		if (dX >= 0 && dX <= 25)
 		{
 			Console.WriteLine("Intervalo [0,25]");
@@ -24,7 +23,7 @@ class URI {
 			Console.WriteLine("Intervalo (75,100]");
 		}
 		else {
-			Console.WriteLine("Fora do intervalo");
+			Console.WriteLine("Fora de intervalo");
 		}
     
     }
