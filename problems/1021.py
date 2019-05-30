@@ -1,4 +1,4 @@
-valor = float(input())
+valor = float('{:0.2f}'.format(float(input()))) #TODO
 
 print(valor)
 
@@ -31,27 +31,35 @@ valorn = valork / 1
 print(int(valorn) , "nota(s) de R$ 1,00")
 
 #0.50
-
-print ('valorm ' +  str(valorm))
 valordv050 = valorm / 0.50
-print ('valordv ' +  str(valordv050))
+print ('moedas de 050 ' +  str(int(valordv050)));
 valordf050 = valorm % 0.50
-print('valordf ' + str(valordf050))
 
-
+print("------------------------------")
 
 #0.25
+valordv025 = valordf050 / 0.25
+print("moedas de 025 " + str(int(valordv025)));
+valordf025 = valordf050 % 0.25
+
+print("------------------------------")
 
 #0.10
-'''
-valordf10 = valorm % 0.10
-print('df ' + str(valordf10))
-strs = str(valorm)
-valorq10 = int(strs[2:]) / 10
-print (int(valorq10),"moedas de 10")
-'''
-#5
+valordv010 = valordf025 / 0.10
+print("moedas de 010 " + str(int(valordv010)));
+valordf010 = valordf025 % 0.10
 
-#1
+print("------------------------------")
 
+#0.05
+valordf010
+valordv005 = valordf010 / 0.05
+print("moedas de 005 " + str(int(valordv005)));
+valordf005 = valordf010 % 0.05
 
+print("------------------------------")
+
+#0.01
+valordv001 = valordf005 / 0.01
+print("moedas de 001 " + str(int(valordv001)));
+#valordf001 = valordf005 % 0.01
