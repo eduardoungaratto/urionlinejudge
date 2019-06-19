@@ -48,7 +48,6 @@ print("moeda(s) de R$ 0.10 " + str(int(valordv010)));
 valordf010 = valordf025 % 0.10
 
 #0.05
-valordf010
 valordv005 = valordf010 / 0.05
 print("moeda(s) de R$ 0.05 " + str(int(valordv005)));
 valordf005 = valordf010 % 0.05
